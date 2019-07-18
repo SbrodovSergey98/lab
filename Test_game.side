@@ -1,0 +1,1736 @@
+{
+  "id": "b0127690-4f29-4c6c-81de-8b64a3a85b12",
+  "version": "2.0",
+  "name": "Test_game",
+  "url": "http://epruryaw0341:8085",
+  "tests": [{
+    "id": "4a0608e1-3eb3-4af3-87fb-5bd1cc923b35",
+    "name": "1 Логин",
+    "commands": [{
+      "id": "e4f8e0af-6d48-428c-8a56-11c3f47d7d0f",
+      "comment": "",
+      "command": "open",
+      "target": "/login?nextPath=%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fcfb110-8b41-4f61-9e05-ed10ee63e321",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "720x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34797d7-f3b7-406a-80d4-490be1fd4099",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.input-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[3]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "844d8931-2538-4230-b735-b0b138dfbbae",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[3]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "tigamo57"
+    }, {
+      "id": "49c4a4d8-89ec-416b-bfd2-3a305109c128",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.input-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[3]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sbrodov98"
+    }, {
+      "id": "c0f98a71-4618-4468-ab2b-d816e7f78edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[3]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08c3a121-e4e8-4c98-a56b-76267624579e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[3]/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05cd20c9-6d54-4327-b620-3825321a1bd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a7aee3-273c-4922-8139-8d4269bec9a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Добро пожаловать в панель управления контентом.')]", "xpath:innerText"]
+      ],
+      "value": "Добро пожаловать в панель управления контентом."
+    }]
+  }, {
+    "id": "a543fbd7-709e-4020-9980-cc4abebd7a78",
+    "name": "2 Создать карту",
+    "commands": [{
+      "id": "dcc3ba67-b965-44d1-b1e9-1cc60207c3ac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c152d6ae-c37a-4e27-991c-36ec8501de2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "720x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fac9062b-668c-4cac-b86d-8d5d0f09c12b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle",
+      "targets": [
+        ["css=.navbar-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/nav/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle navigation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e056e9fb-1402-49c4-b7a4-b5f56293c1fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карты",
+      "targets": [
+        ["linkText=Карты", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карты')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/maps')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13850492-438c-43d4-a1da-4eb81022a7ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Создать",
+      "targets": [
+        ["linkText=Создать", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Создать')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/map/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Создать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abbcc374-293f-47d6-9e75-7a76450046b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'24x24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91fefe6f-3256-4a6f-bca2-ec8d9d82801d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da14019e-f66e-4457-897d-7ae43c9c7f98",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fe90ab4-c75a-42ff-a736-7e1988b87c3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbae74dd-e7dd-4c7b-8863-f99a446472cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "96571397-a4af-47a5-836e-a190366b6822",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "589705f0-75c4-475f-a9b1-b5f185798a6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e92ec35-e037-45a4-bc58-ac086316d4d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(176) > rect",
+      "targets": [
+        ["css=g:nth-child(176) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b775fd80-38a4-41e6-a74f-31372ccf004c",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "004aee8e-7cb0-43a3-baa3-83b1480538c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef83092-2f0d-4e57-a4da-99a2722af582",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d494a702-f336-496e-bb47-a3c31c5d3831",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(136) > rect",
+      "targets": [
+        ["css=g:nth-child(136) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "416f9d75-fd68-430f-b037-ffb58596b781",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(158) > rect",
+      "targets": [
+        ["css=g:nth-child(158) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d626efa4-a3f5-4cf3-8adf-29c142c8eed2",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "64fe96a8-84c4-4dff-a281-0d67abfdc44a",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(108) > rect",
+      "targets": [
+        ["css=g:nth-child(108) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab85adc-9643-40f2-bcc0-5a40add9fcfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5) rect",
+      "targets": [
+        ["css=.btn:nth-child(5) rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "10801f30-0be0-4ecd-bfb7-6861aa8778bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(78) > rect",
+      "targets": [
+        ["css=g:nth-child(78) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b52ab0b1-5938-452c-86a5-19bc581c242a",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(78) > rect",
+      "targets": [
+        ["css=g:nth-child(78) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a39512-2225-46d7-97f8-ffe1729d3796",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b4d304e-a822-49d1-94de-b95203f31770",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(172) > rect",
+      "targets": [
+        ["css=g:nth-child(172) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "99d8f55c-09ef-4b32-a00a-8774d788de4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(196) > rect",
+      "targets": [
+        ["css=g:nth-child(196) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a50bfd99-7018-442a-9192-8f48afdfb33d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6) > svg",
+      "targets": [
+        ["css=.btn:nth-child(6) > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "872dcf43-01e0-408e-825c-8680ce68575e",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(42) > rect",
+      "targets": [
+        ["css=g:nth-child(42) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f42f2b1-bf52-4cbd-acfd-cc0f97c70bac",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(116) > rect",
+      "targets": [
+        ["css=g:nth-child(116) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cdf1a5a-d6dc-4e2a-acb1-0d936ddf3f3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(164) > rect",
+      "targets": [
+        ["css=g:nth-child(164) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7402c2-b443-4d19-80d9-ddb3af4e0abf",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(214) > rect",
+      "targets": [
+        ["css=g:nth-child(214) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfca67ca-873f-4d61-bdbe-5f400e90e238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(7)",
+      "targets": [
+        ["css=.btn:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[7]", "xpath:idRelative"],
+        ["xpath=//button[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd3b928f-1b0e-4c98-9f2a-56d024b0bdae",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(34) > rect",
+      "targets": [
+        ["css=g:nth-child(34) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dc47d7d-d4f3-458d-b8ef-cb76303e18cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(58) > rect",
+      "targets": [
+        ["css=g:nth-child(58) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1599647-8dec-4026-82fc-71d1460a0fd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(129) > rect",
+      "targets": [
+        ["css=g:nth-child(129) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "872bf810-cc1a-4662-b676-a11f078f9801",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(178) > rect",
+      "targets": [
+        ["css=g:nth-child(178) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7280329f-95a1-4160-abd6-a7fd3c4c3310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group > .btn:nth-child(2)",
+      "targets": [
+        ["css=.btn-group > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebef768c-ee85-4fc0-9b26-5e87a80303c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(13) > rect",
+      "targets": [
+        ["css=g:nth-child(13) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "24a60cd1-229c-41d1-aa43-0e19568f9edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(39) > rect",
+      "targets": [
+        ["css=g:nth-child(39) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "48550c4b-43f5-4bc8-9ebc-f35087148095",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6948e68-512e-4fbe-bee1-5e9351dcdf3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e432e1b8-d705-46f3-ad7f-2a2f77e0c48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "768f1038-697f-4d44-a5b4-7492a042be08",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(181) > rect",
+      "targets": [
+        ["css=g:nth-child(181) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5448a513-bea3-4a16-a099-e1da39249cb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eceb19c-36dc-4ab2-9ab4-207145c50b11",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(185) > rect",
+      "targets": [
+        ["css=g:nth-child(185) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebd15288-584b-4aa0-870a-2ceb97c7f2d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(185) > rect",
+      "targets": [
+        ["css=g:nth-child(185) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9464b81-8f8b-42fb-b264-1c5d296024a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5742a77d-6000-47d1-a2c1-43be1860724b",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(114) > rect",
+      "targets": [
+        ["css=g:nth-child(114) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb9acde-1e61-4617-a820-4fefa2ada071",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(114) > rect",
+      "targets": [
+        ["css=g:nth-child(114) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ac868e-2e8c-4cb4-a631-96a0806d2701",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle",
+      "targets": [
+        ["css=.navbar-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/nav/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle navigation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2151309-9726-4c9f-b86a-71398258e3e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить карту')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a34df9-b3ef-4fb0-bb78-93c9979a24b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > .container",
+      "targets": [
+        ["css=div > .container", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "193c917e-d19c-4384-84a9-d5e56d42632b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aed25e14-caa1-49b7-b968-7644dfd7c2b6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "map1"
+    }, {
+      "id": "bd5604b8-f1f5-4b4b-b1e5-c820648d7ead",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить карту')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea90d17d-7ba4-467d-ad06-3b15fc3a71b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вернуться к списку карт",
+      "targets": [
+        ["linkText=Вернуться к списку карт", "linkText"],
+        ["css=.panel-title > .btn-default", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться к списку карт')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/maps')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться к списку карт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ec7571-01ae-4148-91e8-7b469751805f",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=map1",
+      "targets": [
+        ["linkText=map1", "linkText"],
+        ["css=tr:nth-child(5) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'map1')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/table/tbody/tr[5]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/map/c6945b01eadf4c92a2d4b60dfa39515c')]", "xpath:href"],
+        ["xpath=//tr[5]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'map1')]", "xpath:innerText"]
+      ],
+      "value": "map1"
+    }]
+  }, {
+    "id": "33f45ceb-0dd7-4974-9f07-e39f60675adb",
+    "name": "3 Удалить карту",
+    "commands": [{
+      "id": "ee891e85-6b78-4e93-95fb-cbea827c95a4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2804c8c7-e9ee-404e-88ea-a9a2f53c73ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "720x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37cd256c-d352-476d-b160-ef0d0bde1013",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle",
+      "targets": [
+        ["css=.navbar-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/nav/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle navigation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4babfc40-bd4b-4e0e-9e23-9a0785cc5c82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Карты",
+      "targets": [
+        ["linkText=Карты", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Карты')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/maps')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Карты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee5b0d63-1f7b-4c67-a4b8-05b420465e41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/nav/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a6de576-e9d1-4bae-8e7d-a2316f498902",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Создать",
+      "targets": [
+        ["linkText=Создать", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Создать')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/map/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Создать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c619ae2a-18fa-463f-9d48-ef2ac4703b34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'24x24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ce0462-a122-42b9-b06c-ee3ff3204224",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(55) > rect",
+      "targets": [
+        ["css=g:nth-child(55) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f89a350d-8c97-45ea-aeef-869a707ea1e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(57) > rect",
+      "targets": [
+        ["css=g:nth-child(57) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d096c74b-1b03-4022-9a3d-c8a7b29b395c",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(105) > rect",
+      "targets": [
+        ["css=g:nth-child(105) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "746455d5-3e2f-420f-8a56-d39507890a01",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b71530fa-aba2-42bf-b241-a09447879c90",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(150) > rect",
+      "targets": [
+        ["css=g:nth-child(150) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c94d50cd-d049-4bc5-a3fb-91c9e2489136",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(170) > rect",
+      "targets": [
+        ["css=g:nth-child(170) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "11d9d2b1-d029-4c95-a042-bf7919961809",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "592701a7-a4b3-496b-a157-4e34e6c95167",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "79b38d96-47c0-4574-afab-dca812e9870a",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad7f4811-3276-4594-b95c-5c08cbbe192e",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d1c20a-55f8-401d-b887-ec7cf7550725",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(86) > rect",
+      "targets": [
+        ["css=g:nth-child(86) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dd252dc-6fc4-4be2-917f-1ce476ece36c",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(64) > rect",
+      "targets": [
+        ["css=g:nth-child(64) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "47a2b744-39ce-458c-bb36-fe8f8999a08b",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9c038b6-e587-47c7-98ea-e9f302b2d012",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(40) > rect",
+      "targets": [
+        ["css=g:nth-child(40) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae93273a-169f-4a6b-a2aa-b00d970c0537",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(37) > rect",
+      "targets": [
+        ["css=g:nth-child(37) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "384ff700-bbc1-4070-8cc3-4fe61105e9cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(36) > rect",
+      "targets": [
+        ["css=g:nth-child(36) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7130e71c-d5e1-41ac-9427-46a1c9f211d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "569bea5d-166d-4d91-a42c-d8267d271fe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(84) > rect",
+      "targets": [
+        ["css=g:nth-child(84) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c98c4dd-6d24-4213-806a-26832f64c872",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b96d980-ff2a-4aa0-9847-43e8b1f07e73",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cc178a0-2224-4265-8c3d-8f5b10e235a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(175) > rect",
+      "targets": [
+        ["css=g:nth-child(175) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4919bf7e-2185-4274-b5a0-fb7c1a369928",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(198) > rect",
+      "targets": [
+        ["css=g:nth-child(198) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1944ea9-ea58-4315-8122-3d7f16466ba0",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(100) > rect",
+      "targets": [
+        ["css=g:nth-child(100) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1032f65-bd33-46c5-8b50-e2b2a5dd1e9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel",
+      "targets": [
+        ["css=.panel", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bd6e122-8cae-4ad0-ad73-914209d6d348",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[6]", "xpath:idRelative"],
+        ["xpath=//button[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3db5eb86-bb4c-4035-8bb1-6552d6cab6c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(68) > rect",
+      "targets": [
+        ["css=g:nth-child(68) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8a2353d-1df7-45ec-86da-5d67ac547f06",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e8bc126-d9f8-42c8-827a-00af5807f9c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68be4c7-3852-4e7b-baa9-59ca70275cde",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(160) > rect",
+      "targets": [
+        ["css=g:nth-child(160) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "22da31fa-9e77-491e-b94f-958a85c2ae76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(7)",
+      "targets": [
+        ["css=.btn:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div[2]/div[2]/div/button[7]", "xpath:idRelative"],
+        ["xpath=//button[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d0d08b9-3e53-4338-a130-29f49bd62465",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bda133ef-0ecb-4814-a938-ebba6bd00a95",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead95660-7375-4a20-8016-af29347e4184",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(188) > rect",
+      "targets": [
+        ["css=g:nth-child(188) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "685df2c4-e2db-47b1-a542-55c95f115b16",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(65) > rect",
+      "targets": [
+        ["css=g:nth-child(65) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e62cc8-3110-420b-b382-53e9d69fda48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5) rect",
+      "targets": [
+        ["css=.btn:nth-child(5) rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "888e3781-0e1f-4cfa-a02b-fdc1552cb6b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=g:nth-child(51) > rect",
+      "targets": [
+        ["css=g:nth-child(51) > rect", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a920deed-5eb3-4e4f-9d0c-86232ab97d93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12c9a5f7-82c6-443c-a3cc-4219534e318f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "bd541b77-db40-4059-8d6d-73fbf8446980",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить карту')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e839a36-2558-4e05-a41a-f6cec89ad68b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='1']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d0b6e15-9951-4fc3-bb9e-2dd4156a1285",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='1']", "xpath:attributes"],
+        ["xpath=//div[@id='reactApp']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1998"
+    }, {
+      "id": "85848619-afa7-45f7-9b60-89e7036d9e4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить карту')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7e32c4-4fda-4c0e-b1a6-e2f893ef0c9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вернуться к списку карт",
+      "targets": [
+        ["linkText=Вернуться к списку карт", "linkText"],
+        ["css=.panel-title > .btn-default", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться к списку карт')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/maps')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться к списку карт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00c3ffdc-b88b-4a7e-a97f-9dfe4f555ab3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .glyphicon-trash",
+      "targets": [
+        ["css=tr:nth-child(2) .glyphicon-trash", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/table/tbody/tr[2]/td[5]/button/span", "xpath:idRelative"],
+        ["xpath=//td[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d7a3ab8-176b-4d5c-aab2-1560f392325c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1998",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ОК')]", "xpath:innerText"]
+      ],
+      "value": "1998"
+    }, {
+      "id": "777413b5-5775-4acc-905a-b2f797aceaa1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'ОК')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7c7aabb-3cca-447b-bdaf-dda86b49b4a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вернуться к списку карт",
+      "targets": [
+        ["linkText=Вернуться к списку карт", "linkText"],
+        ["css=.panel-title > .btn-default", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться к списку карт')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/maps')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться к списку карт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eacbbaf2-0cab-4ec4-aedc-45eb9bc4c808",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "linkText=1998",
+      "targets": [],
+      "value": "1998"
+    }]
+  }, {
+    "id": "388cd4c2-e859-4aec-b333-95eba71b6c65",
+    "name": "4 Перейти к списку игр",
+    "commands": [{
+      "id": "cf9a3ff9-475c-4e4b-a048-734b4d302f0a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "707d2ebc-c0d1-43b5-bd68-de6119a0fe27",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "720x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "396b1ccc-205c-4cfb-b142-cd747e6c3050",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к списку игр",
+      "targets": [
+        ["linkText=Перейти к списку игр", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к списку игр')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к списку игр')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9169",
+      "windowTimeout": 2000
+    }, {
+      "id": "1bef64bd-233c-42e6-9869-af707d370ae6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9169}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00037235-7ae5-4967-a4c3-b6cd16c4ba2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.idx-game-header",
+      "targets": [
+        ["css=.idx-game-header", "css:finder"],
+        ["xpath=//table[@id='gameList']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Список активных игр')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6db8668-83a3-46ef-b1c1-ea8c2f5b648b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.idx-game-header",
+      "targets": [
+        ["css=.idx-game-header", "css:finder"],
+        ["xpath=//table[@id='gameList']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Список активных игр')]", "xpath:innerText"]
+      ],
+      "value": "Список активных игр"
+    }]
+  }, {
+    "id": "7d91364f-71bc-441d-8274-38e705a87d95",
+    "name": "5 Создать игру",
+    "commands": [{
+      "id": "38bda3a2-ba84-4aef-81b0-68fec6c3b6b8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bea607e7-468b-42ee-ae7e-54424188e133",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "887x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b45bb0f4-e064-4db0-9def-ff04ce9b8d28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel-heading",
+      "targets": [
+        ["css=.panel-heading", "css:finder"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34d6487-3918-4247-8fea-57b795bc6401",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к списку игр",
+      "targets": [
+        ["linkText=Перейти к списку игр", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к списку игр')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к списку игр')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1169",
+      "windowTimeout": 2000
+    }, {
+      "id": "e6f98921-5f2d-472b-ad47-b703c0e081eb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1169}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "882da106-2253-469d-9642-9785bb15a310",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Создать Игру",
+      "targets": [
+        ["linkText=Создать Игру", "linkText"],
+        ["css=.idx-create-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Создать Игру')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[10]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'newgame.html')]", "xpath:href"],
+        ["xpath=//tr[10]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Создать Игру')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2db463-a4fe-446c-b241-e46cb25c2ce6",
+      "comment": "",
+      "command": "click",
+      "target": "name=gtest",
+      "targets": [
+        ["name=gtest", "name"],
+        ["css=.new-game-control-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='gtest']", "xpath:attributes"],
+        ["xpath=//form[@id='new-game-form']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db313523-8845-4160-8b67-229777b29734",
+      "comment": "",
+      "command": "click",
+      "target": "name=gname",
+      "targets": [
+        ["name=gname", "name"],
+        ["css=.new-game-control-group:nth-child(2) > .new-game-control", "css:finder"],
+        ["xpath=//input[@name='gname']", "xpath:attributes"],
+        ["xpath=//form[@id='new-game-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0af0a42-5920-4e6c-8cc2-31fa02f9dd6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=gname",
+      "targets": [
+        ["name=gname", "name"],
+        ["css=.new-game-control-group:nth-child(2) > .new-game-control", "css:finder"],
+        ["xpath=//input[@name='gname']", "xpath:attributes"],
+        ["xpath=//form[@id='new-game-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234567"
+    }, {
+      "id": "c8b3465e-d38d-4e01-80c3-9872d124598f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-new-game",
+      "targets": [
+        ["id=btn-new-game", "id"],
+        ["css=#btn-new-game", "css:finder"],
+        ["xpath=//input[@id='btn-new-game']", "xpath:attributes"],
+        ["xpath=//form[@id='new-game-form']/fieldset/div[8]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ce6fd3b-ec3a-4bdb-a042-cafa6564587a",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=1234567 (Тестовая)", "linkText"],
+        ["css=.idx-game-row:nth-child(3) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'1234567 (Тестовая)')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=test')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'1234567 (Тестовая)')]", "xpath:innerText"]
+      ],
+      "value": "1234567 (Тестовая)"
+    }]
+  }, {
+    "id": "8a1ee691-7385-4ffa-8182-7a266e3020e1",
+    "name": "6 Открыть игру",
+    "commands": [{
+      "id": "d7bb892d-29c3-4c3b-8d73-f4373d55eb2d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f69dcb1c-8d02-4a75-8d04-4034017e3e84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "887x735",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "893bfc10-b3a0-4745-ab66-64b906806e28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к списку игр",
+      "targets": [
+        ["linkText=Перейти к списку игр", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к списку игр')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к списку игр')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8430",
+      "windowTimeout": 2000
+    }, {
+      "id": "57968c7d-a8ae-41e3-a80a-eed768e7a9c9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8430}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0367fabc-bfc6-413a-b0a4-0b63acbe3d05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=1234567 (Тестовая)", "linkText"],
+        ["css=.idx-game-row:nth-child(3) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'1234567 (Тестовая)')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=test')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'1234567 (Тестовая)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52bcb03f-9542-41b9-ab66-8583c66433cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=btnStart",
+      "targets": [
+        ["id=btnStart", "id"],
+        ["css=#btnStart", "css:finder"],
+        ["xpath=//button[@id='btnStart']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Старт')]", "xpath:innerText"]
+      ],
+      "value": "Старт"
+    }, {
+      "id": "2a7a4522-f692-4743-a5e2-6e2459be0504",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=btnStop",
+      "targets": [
+        ["id=btnStop", "id"],
+        ["css=#btnStop", "css:finder"],
+        ["xpath=//button[@id='btnStop']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Стоп')]", "xpath:innerText"]
+      ],
+      "value": "Стоп"
+    }]
+  }, {
+    "id": "893f203a-aacb-4114-8797-6a63b08d900a",
+    "name": "8 Покинуть игру",
+    "commands": [{
+      "id": "12d2c3df-136c-456f-a8ea-d129d46e7322",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8967fdf9-c956-4351-9b53-35048ce08d35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "887x735",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21df9868-d61b-44ac-b1dd-7e6843140ccf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к списку игр",
+      "targets": [
+        ["linkText=Перейти к списку игр", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к списку игр')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к списку игр')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4136",
+      "windowTimeout": 2000
+    }, {
+      "id": "a518669a-84c9-44fb-bb28-0c107a113016",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4136}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e550192e-945e-483d-846c-f14ebbd4241f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=1234567 (Тестовая)", "linkText"],
+        ["css=.idx-game-row:nth-child(3) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'1234567 (Тестовая)')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=test')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'1234567 (Тестовая)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e0e1960-b596-4140-a918-05d1944912e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button7",
+      "targets": [
+        ["css=.button7", "css:finder"],
+        ["xpath=//button[@onclick='exit()']", "xpath:attributes"],
+        ["xpath=//button[7]", "xpath:position"],
+        ["xpath=//button[contains(.,'Выход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee81f96c-514d-4b72-95d0-fc42c46e32f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Завершить",
+      "targets": [
+        ["linkText=Завершить", "linkText"],
+        ["css=.idx-game-cancel", "css:finder"],
+        ["xpath=//a[contains(text(),'Завершить')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Завершить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68587418-2bda-4939-bf89-1384533c7230",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=tanch", "linkText"],
+        ["css=.idx-game-row:nth-child(3) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'tanch')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=c85dd40777dd4f33969292a59b1904bf')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'tanch')]", "xpath:innerText"]
+      ],
+      "value": "1234567 (Тестовая)"
+    }]
+  }, {
+    "id": "b7bf0292-0764-4eb1-9c9f-8951e5359993",
+    "name": "9 Прервать игру",
+    "commands": [{
+      "id": "17ef065b-69a3-46e7-80cd-c8b0fff23b34",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1439bb69-8582-4593-a9b2-0f667507de82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "887x735",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2adf24b9-ccfe-4a6a-95fc-ad84d8cf206e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к списку игр",
+      "targets": [
+        ["linkText=Перейти к списку игр", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к списку игр')]", "xpath:link"],
+        ["xpath=//div[@id='reactApp']/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к списку игр')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6169",
+      "windowTimeout": 2000
+    }, {
+      "id": "7f404338-64de-4e60-af39-36df2b388045",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6169}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b033449-c086-4a7a-bc85-15dee34be664",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=1234567 (Тестовая)", "linkText"],
+        ["css=.idx-game-row:nth-child(3) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'1234567 (Тестовая)')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=test')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'1234567 (Тестовая)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70bb855a-f608-4050-83a2-18e5e6bfca71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button6",
+      "targets": [
+        ["css=.button6", "css:finder"],
+        ["xpath=//button[@onclick='cancel()']", "xpath:attributes"],
+        ["xpath=//button[6]", "xpath:position"],
+        ["xpath=//button[contains(.,'Отмена')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7940b65c-ce7d-4f2c-84b9-a2e8d2a43756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button7",
+      "targets": [
+        ["css=.button7", "css:finder"],
+        ["xpath=//button[@onclick='exit()']", "xpath:attributes"],
+        ["xpath=//button[7]", "xpath:position"],
+        ["xpath=//button[contains(.,'Выход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db6fe8c6-5f0f-4d61-ad45-89115779d5aa",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "linkText=1234567 (Тестовая)",
+      "targets": [
+        ["linkText=hasfgfbvdbv", "linkText"],
+        ["css=.idx-game-row:nth-child(4) .idx-game-link", "css:finder"],
+        ["xpath=//a[contains(text(),'hasfgfbvdbv')]", "xpath:link"],
+        ["xpath=//table[@id='gameList']/tbody/tr[4]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'game.html?gameId=afb4fbb925e640538e76568b4905c357')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'hasfgfbvdbv')]", "xpath:innerText"]
+      ],
+      "value": "1234567 (Тестовая)"
+    }]
+  }],
+  "suites": [{
+    "id": "d5480203-95ff-4ad5-90dd-c4708dea94c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://epruryaw0341:8085/"],
+  "plugins": []
+}

@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "91762c30-ce8a-4358-b0aa-adfccdec9621",
+		"name": "sbrodov98",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9f24fb07-f65f-4744-aee8-15e6b062c336",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var json = JSON.parse(responseBody);",
+							"var token = json.access_token;",
+							"pm.environment.set(\"token\", token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "sbrodov98",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "tigamo57",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "epruryaw0341:8085/token",
+					"host": [
+						"epruryaw0341"
+					],
+					"port": "8085",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "infoclient",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae631707-22eb-4312-8026-9b138ffb2fa3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{u}}/api/me",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obnovlenie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a815b9f6-90c1-4882-ab83-0a221fe574d3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"NativeName\": \"Sbrodov8585\",\r\n  \"Role\": 0,\r\n  \"OldPassword\": \"tigamo57\",\r\n  \"Password\": \"tigamo57\",\r\n  \"ConfirmPassword\": \"tigamo57\"\r\n}"
+				},
+				"url": {
+					"raw": "http://epruryaw0341:8085/api/user/f7c9624c6d26456588d75ae4e5113023",
+					"protocol": "http",
+					"host": [
+						"epruryaw0341"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"user",
+						"f7c9624c6d26456588d75ae4e5113023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "infoOtherClient",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1e9222ec-0665-4682-a46e-5957c5e86047",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://epruryaw0341:8085/api/user/f7c9624c6d26456588d75ae4e5113023",
+					"protocol": "http",
+					"host": [
+						"epruryaw0341"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"user",
+						"f7c9624c6d26456588d75ae4e5113023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spisokKart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "92b4bd58-669c-4fba-a1f5-193a45099ae3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/map",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sozdanieIgri",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eacef477-876a-4b0b-8026-1d6534a2f288",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"1111\",\r\n  \"MapId\": \"7611d4fd6bbe48fa8b9712efbade409e\",\r\n  \"SwitchTimeout\": 6000,\r\n  \"StartupTeamLives\": 1414,\r\n  \"PoliceSpeed\": 3,\r\n  \"ThiefSpeed\": 4\r\n}"
+				},
+				"url": {
+					"raw": "{{u}}/api/game",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spisokIgr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4fac04a7-4925-468c-9e22-6f62120715f7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/game",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "infoGame",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "91705ce9-dcae-4358-a0b5-a786948782e7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/games",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "infoGamePolzovatel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d65d7c30-6348-492d-bc81-c1638422faaf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{u}}/api/game?start=1&count=1",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"game"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b560f247-030c-412c-86fe-92a3389b7bbc",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/game/d768ebd6efba47ba981c133e303e7af6",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"game",
+						"d768ebd6efba47ba981c133e303e7af6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spisokIgr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8f013fbc-fb96-4034-93e1-6f7044a502a5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/maps",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "spisokIgrPolzovatel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffec2a16-3275-43fc-9e0f-d931f8c86a76",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "IShipAuthToken={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{u}}/api/user/f7c9624c6d26456588d75ae4e5113023/maps",
+					"host": [
+						"{{u}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"f7c9624c6d26456588d75ae4e5113023",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

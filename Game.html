@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+      <!--from server-->    
+      <script src="../js/jquery.js" type="text/javascript"></script><!--required-->
+      <script src="../js/jquery.signalR.js" type="text/javascript"></script><!--required-->  
+      <script src="../js/gameApi.js" type="text/javascript"></script><!--required-->
+      <!---->    
+      
+</head>
+
+<body class="img">
+    <ul class="animate-ul">
+        <li>П</li>
+        <li>о</li>
+        <li>л</li>
+        <li>и</li>
+        <li>ц</li>
+        <li>е</li>
+        <li>й</li>
+        <li>с</li>
+        <li>к</li>
+        <li>и</li>
+        <li class="e">е</li>
+        <li>и</li>
+        <li class="m">м</li>
+        <li>о</li>
+        <li>ш</li>
+        <li>е</li>
+        <li>н</li>
+        <li>н</li>
+        <li>и</li>
+        <li>к</li>
+        <li>и</li>
+      </ul>
+    <div class="middle">
+        <div class="teams">
+            <div class="Block1">
+                <div>Название: <span id="ftName">Синяки</span></div>
+                <div>Очки: <span id="ftScore">0</span></div>
+                <div>Осталось жизней: <span id="ftLifes">5</span></div>
+            </div>
+
+            <div class="Block2">
+                <div>Название: <span id="stName">Курилки</span></div>
+                <div>Очки: <span id="stScore">0</span></div>
+                <div>Осталось жизней: <span id="stLifes">5</span></div> 
+            </div>
+        </div>
+
+        <div class="playboard">
+            <h2 class="rol">Смена ролей</h2>
+            <div class="progress">   
+                <progress id="progressBar" value="0" max="100"></progress>
+            </div>
+            <canvas class="karta" id="map"></canvas>
+        </div>
+
+        <textarea class="log" id="logBox"> Игра готова в запуску </textarea>
+    </div>
+    <div class="bottom">
+        <button class="button1" id="btnStart" onclick="start()">Старт</button>
+        <button class="button2" id="btnStop" onclick="stop()">Стоп</button>
+        <button class="button3" onclick="join()">Подключиться</button>
+        <button class="button4" onclick="leave()">Отключиться</button>
+        <button class="button5" onclick="reconnect()">Переподключиться</button>
+        <button class="button6" ib="btnCancel" onclick="cancel()">Отмена</button>
+        <button class="button7" onclick="exit()">Выход</button>
+    </div>
+    <!-- <script src="wrapper.js"></script> -->
+    <script src="../js/jsHelper.js"></script>
+    <script src="../js/wrapper.js"></script>
+    <script src="./game.js"></script>
+</body>
+
+</html>
